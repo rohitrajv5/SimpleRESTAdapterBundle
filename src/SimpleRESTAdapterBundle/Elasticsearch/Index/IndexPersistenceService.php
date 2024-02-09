@@ -13,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index;
 
 use Elasticsearch\Client;
 use Exception;
@@ -22,10 +22,10 @@ use Pimcore\Bundle\DataHubBundle\Configuration;
 use Pimcore\Model\Asset;
 use Pimcore\Model\DataObject;
 use Pimcore\Model\Element\ElementInterface;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Provider\DataObjectProvider;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider\DataObjectProvider;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
 
 final class IndexPersistenceService
 {

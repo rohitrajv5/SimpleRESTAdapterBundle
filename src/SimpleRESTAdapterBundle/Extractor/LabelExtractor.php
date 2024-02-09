@@ -13,9 +13,9 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Extractor;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor;
 
-use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
 
 final class LabelExtractor implements LabelExtractorInterface
 {

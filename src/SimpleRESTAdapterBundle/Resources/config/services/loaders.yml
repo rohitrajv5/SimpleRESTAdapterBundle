@@ -1,12 +1,12 @@
 services:
 
     # Composite Configuration Loader
-    Rohit\Bundle\SimpleRESTAdapterBundle\Loader\CompositeConfigurationLoader:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Loader\CompositeConfigurationLoader:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
             - !tagged_iterator pimcore.datahub.configuration.loader
 
     # Simple REST Configuration Loader
-    Rohit\Bundle\SimpleRESTAdapterBundle\Loader\SimpleRESTConfigurationLoader:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Loader\SimpleRESTConfigurationLoader:
         tags:
             - { name: 'pimcore.datahub.configuration.loader' }

@@ -13,10 +13,10 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector;
 
 use Pimcore\Model\DataObject\Data\ImageGallery;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 final class ImageGalleryDataCollector implements DataCollectorInterface
 {

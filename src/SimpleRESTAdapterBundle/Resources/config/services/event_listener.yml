@@ -1,27 +1,27 @@
 services:
 
     # Config Modification
-    Rohit\Bundle\SimpleRESTAdapterBundle\EventListener\ConfigModificationListener:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\EventListener\ConfigModificationListener:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
             - '@messenger.default_bus'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\AssetMapping'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\DataObjectMapping'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\FolderMapping'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\AssetMapping'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\DataObjectMapping'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\FolderMapping'
         tags:
             - { name: kernel.event_subscriber }
 
     # Element Enqueueing
-    Rohit\Bundle\SimpleRESTAdapterBundle\EventListener\ElementEnqueueingListener:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\EventListener\ElementEnqueueingListener:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Loader\CompositeConfigurationLoader'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Loader\CompositeConfigurationLoader'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
             - '@messenger.default_bus'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuardInterface'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuardInterface'
         tags:
             - { name: kernel.event_subscriber }
 
     # Exception
-    Rohit\Bundle\SimpleRESTAdapterBundle\EventListener\ExceptionListener:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\EventListener\ExceptionListener:
         tags:
             - { name: kernel.event_subscriber }

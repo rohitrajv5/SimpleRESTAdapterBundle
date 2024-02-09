@@ -13,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Provider;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider;
 
 use Exception;
 use Pimcore\Model\Asset;
@@ -22,7 +22,7 @@ use Pimcore\Model\Element\ElementInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Webmozart\Assert\Assert;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 final class AssetProvider implements ProviderInterface
 {

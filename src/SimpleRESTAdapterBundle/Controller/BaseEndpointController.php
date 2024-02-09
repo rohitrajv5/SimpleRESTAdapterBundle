@@ -13,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Controller;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Controller;
 
 use ONGR\ElasticsearchDSL\Aggregation\Bucketing\TermsAggregation;
 use ONGR\ElasticsearchDSL\Query\Compound\BoolQuery;
@@ -25,13 +25,13 @@ use Pimcore\Bundle\DataHubBundle\Configuration;
 use Pimcore\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\AccessDeniedException;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\ConfigurationNotFoundException;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\ElementNotFoundException;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\InvalidParameterException;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Exception\AccessDeniedException;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Exception\ConfigurationNotFoundException;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Exception\ElementNotFoundException;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Exception\InvalidParameterException;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
 
 abstract class BaseEndpointController extends FrontendController
 {

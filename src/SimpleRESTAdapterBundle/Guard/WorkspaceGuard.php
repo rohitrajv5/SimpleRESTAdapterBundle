@@ -13,11 +13,11 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Guard;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Guard;
 
 use Pimcore\Model\Element\ElementInterface;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Utils\WorkspaceSorter;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Utils\WorkspaceSorter;
 
 final class WorkspaceGuard implements WorkspaceGuardInterface
 {

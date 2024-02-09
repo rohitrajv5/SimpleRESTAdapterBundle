@@ -13,17 +13,17 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Manager;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager;
 
 use InvalidArgumentException;
 use Pimcore\Model\Asset;
 use Pimcore\Model\DataObject;
 use Pimcore\Model\Element\ElementInterface;
 use RuntimeException;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\ESClientException;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Utils\DiffArray;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Exception\ESClientException;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Utils\DiffArray;
 
 final class IndexManager
 {

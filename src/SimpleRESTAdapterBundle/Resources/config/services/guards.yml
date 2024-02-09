@@ -1,5 +1,5 @@
 services:
 
     # Workspace Guard
-    Rohit\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuardInterface: '@Rohit\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuard'
-    Rohit\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuard: ~
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuardInterface: '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuard'
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuard: ~

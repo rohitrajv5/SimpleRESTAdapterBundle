@@ -1,27 +1,27 @@
 services:
 
     # Composite Data Collector
-    Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\CompositeDataCollector:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\CompositeDataCollector:
         arguments:
             - !tagged_iterator simple_rest_adapter.data_collector
 
     # Hotspot Image Data Collector
-    Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\HotspotImageDataCollector:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\HotspotImageDataCollector:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\ImageDataCollector'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\ImageDataCollector'
         tags:
             - { name: 'simple_rest_adapter.data_collector', priority: 20 }
 
     # Image Data Collector
-    Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\ImageDataCollector:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\ImageDataCollector:
         arguments:
             - '@router.default'
         tags:
             - { name: 'simple_rest_adapter.data_collector', priority: 30 }
 
     # Image Gallery Data Collector
-    Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\ImageGalleryDataCollector:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\ImageGalleryDataCollector:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\HotspotImageDataCollector'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\HotspotImageDataCollector'
         tags:
             - { name: 'simple_rest_adapter.data_collector', priority: 10 }

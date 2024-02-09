@@ -13,13 +13,13 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\EventListener;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\EventListener;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\EndpointExceptionInterface;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Exception\EndpointExceptionInterface;
 
 class ExceptionListener implements EventSubscriberInterface
 {

@@ -13,15 +13,15 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Provider;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider;
 
 use Pimcore\Localization\LocaleService;
 use Pimcore\Model\DataObject;
 use Pimcore\Model\Element\ElementInterface;
 use Pimcore\Tool;
 use Webmozart\Assert\Assert;
-use Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\CompositeDataCollector;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\DataCollector\CompositeDataCollector;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 final class DataObjectProvider implements ProviderInterface
 {

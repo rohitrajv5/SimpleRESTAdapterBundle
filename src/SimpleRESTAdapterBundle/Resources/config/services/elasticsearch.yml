@@ -7,11 +7,11 @@ services:
     # Client Builder Factory
     simple_rest_adapter.elasticsearch.client_factory:
         class: Elasticsearch\Client
-        factory: ['@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilder', 'build']
+        factory: ['@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilder', 'build']
 
     # Client Builder Service
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilderInterface: '@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilder'
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilder:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilderInterface: '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilder'
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder\ClientBuilder:
         arguments:
             - '%simple_rest_adapter.es_hosts%'
 
@@ -21,16 +21,16 @@ services:
     #
 
     # Index Persistence Service
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService:
         arguments:
             - '@simple_rest_adapter.elasticsearch.client_factory'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Provider\DataObjectProvider'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider\DataObjectProvider'
             - '%simple_rest_adapter.index_settings%'
 
     # Query Service
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexQueryService:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexQueryService:
         arguments:
             - '@simple_rest_adapter.elasticsearch.client_factory'
             - '%simple_rest_adapter.index_name_prefix%'
@@ -41,10 +41,10 @@ services:
     #
 
     # Asset Mapping
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\AssetMapping: ~
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\AssetMapping: ~
 
     # DataObject Mapping
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\DataObjectMapping: ~
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\DataObjectMapping: ~
 
     # Folder Mapping
-    Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\FolderMapping: ~
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\FolderMapping: ~

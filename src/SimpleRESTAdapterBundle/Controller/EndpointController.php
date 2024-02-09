@@ -13,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Controller;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Controller;
 
 use Elasticsearch\Common\Exceptions\Missing404Exception;
 use ONGR\ElasticsearchDSL\Query\FullText\MatchQuery;
@@ -24,10 +24,10 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexQueryService;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexQueryService;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 class EndpointController extends BaseEndpointController
 {

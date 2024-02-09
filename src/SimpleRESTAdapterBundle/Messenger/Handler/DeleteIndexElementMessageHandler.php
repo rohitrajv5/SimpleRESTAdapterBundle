@@ -13,11 +13,11 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\Handler;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Messenger\Handler;
 
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\DeleteIndexElementMessage;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Messenger\DeleteIndexElementMessage;
 
 final class DeleteIndexElementMessageHandler implements MessageHandlerInterface
 {

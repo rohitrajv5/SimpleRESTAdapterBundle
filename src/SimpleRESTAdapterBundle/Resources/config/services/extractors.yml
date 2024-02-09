@@ -1,7 +1,7 @@
 services:
 
     # Label Extractor
-    Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface: '@Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractor'
-    Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractor:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface: '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractor'
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractor:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'

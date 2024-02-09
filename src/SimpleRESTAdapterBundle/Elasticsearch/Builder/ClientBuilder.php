@@ -13,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Builder;
 
 use Elasticsearch\Client;
 

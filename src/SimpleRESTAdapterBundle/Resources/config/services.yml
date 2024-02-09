@@ -9,10 +9,10 @@ services:
         public: false
 
     # Controllers
-    Rohit\Bundle\SimpleRESTAdapterBundle\Controller\:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Controller\:
         resource: '../../Controller'
         public: true
         tags: ['controller.service_arguments']
         bind:
-            $configRepository: '@Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
-            $labelExtractor: '@Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface'
+            $configRepository: '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
+            $labelExtractor: '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface'

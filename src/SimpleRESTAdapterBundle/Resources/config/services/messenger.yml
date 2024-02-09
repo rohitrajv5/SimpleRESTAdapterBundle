@@ -1,25 +1,25 @@
 services:
 
     # Delete Index Element
-    Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\Handler\DeleteIndexElementMessageHandler:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Messenger\Handler\DeleteIndexElementMessageHandler:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService'
         tags:
             - { name: messenger.message_handler }
 
     # Initialize Endpoint
-    Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\Handler\InitializeEndpointMessageHandler:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Messenger\Handler\InitializeEndpointMessageHandler:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository'
             - '@database_connection'
             - '@messenger.default_bus'
         tags:
             - { name: messenger.message_handler }
 
     # Update Index Element
-    Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\Handler\UpdateIndexElementMessageHandler:
+    CIHubPim11\Bundle\SimpleRESTAdapterBundle\Messenger\Handler\UpdateIndexElementMessageHandler:
         arguments:
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
-            - '@Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager'
+            - '@CIHubPim11\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService'
         tags:
             - { name: messenger.message_handler }

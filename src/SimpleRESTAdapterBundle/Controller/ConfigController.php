@@ -13,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace Rohit\Bundle\SimpleRESTAdapterBundle\Controller;
+namespace CIHubPim11\Bundle\SimpleRESTAdapterBundle\Controller;
 
 use Exception;
 use InvalidArgumentException;
@@ -28,13 +28,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\GetModifiedConfigurationEvent;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
-use Rohit\Bundle\SimpleRESTAdapterBundle\SimpleRESTAdapterEvents;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Model\Event\GetModifiedConfigurationEvent;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
+use CIHubPim11\Bundle\SimpleRESTAdapterBundle\SimpleRESTAdapterEvents;
 
 class ConfigController extends AdminController
 {
