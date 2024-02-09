@@ -43,3 +43,4 @@ Therefore, it can be used to connect Pimcore to other systems or to connect Fron
 Copyright © 2021 CI HUB GmbH. All rights reserved.
 
 For licensing details please visit [LICENSE.md](LICENSE.md)
+# SimpleRESTAdapterBundle
