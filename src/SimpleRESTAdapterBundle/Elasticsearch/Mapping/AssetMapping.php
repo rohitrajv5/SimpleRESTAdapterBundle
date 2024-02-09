@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,10 +13,10 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping;
 
 use RuntimeException;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 final class AssetMapping extends DefaultMapping
 {
@@ -150,4 +151,3 @@ final class AssetMapping extends DefaultMapping
         return $properties;
     }
 }
-

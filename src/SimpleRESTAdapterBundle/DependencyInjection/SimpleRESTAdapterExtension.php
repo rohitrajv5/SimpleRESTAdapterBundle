@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\DependencyInjection;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\DependencyInjection;
 
 use Exception;
 use Symfony\Component\Config\FileLocator;

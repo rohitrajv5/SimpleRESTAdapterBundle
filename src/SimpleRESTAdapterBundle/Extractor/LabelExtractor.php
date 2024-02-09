@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,9 +13,9 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Extractor;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Extractor;
 
-use CIHub\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
 
 final class LabelExtractor implements LabelExtractorInterface
 {

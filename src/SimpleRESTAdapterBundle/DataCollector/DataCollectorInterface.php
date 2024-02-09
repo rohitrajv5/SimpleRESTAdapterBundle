@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,9 +13,9 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\DataCollector;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector;
 
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 interface DataCollectorInterface
 {

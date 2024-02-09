@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index;
 
 use Elasticsearch\Client;
 use Elasticsearch\Common\Exceptions\Missing404Exception;

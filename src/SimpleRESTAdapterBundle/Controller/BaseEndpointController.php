@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Controller;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Controller;
 
 use ONGR\ElasticsearchDSL\Aggregation\Bucketing\TermsAggregation;
 use ONGR\ElasticsearchDSL\Query\Compound\BoolQuery;
@@ -24,13 +25,13 @@ use Pimcore\Bundle\DataHubBundle\Configuration;
 use Pimcore\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Exception\AccessDeniedException;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Exception\ConfigurationNotFoundException;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Exception\ElementNotFoundException;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Exception\InvalidParameterException;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\AccessDeniedException;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\ConfigurationNotFoundException;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\ElementNotFoundException;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\InvalidParameterException;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
 
 abstract class BaseEndpointController extends FrontendController
 {
@@ -258,8 +259,10 @@ abstract class BaseEndpointController extends FrontendController
     protected function checkAuthentication(string $apiKey): void
     {
         // look for header "Authorization: Bearer <token>"
-        if (!$this->request->headers->has('Authorization')
-            || 0 !== strpos($this->request->headers->get('Authorization'), 'Bearer ')) {
+        if (
+            !$this->request->headers->has('Authorization')
+            || 0 !== strpos($this->request->headers->get('Authorization'), 'Bearer ')
+        ) {
             throw new AccessDeniedException();
         }
 

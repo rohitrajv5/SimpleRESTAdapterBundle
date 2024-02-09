@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,35 +13,35 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle;
 
 final class SimpleRESTAdapterEvents
 {
     /**
      * The CONFIGURATION_PRE_DELETE event occurs before the configuration gets deleted.
      *
-     * @Event("CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent")
+     * @Event("Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent")
      */
     public const CONFIGURATION_PRE_DELETE = 'datahub.simple_rest.configuration.pre_delete';
 
     /**
      * The CONFIGURATION_POST_DELETE event occurs after the configuration was deleted.
      *
-     * @Event("CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent")
+     * @Event("Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent")
      */
     public const CONFIGURATION_POST_DELETE = 'datahub.simple_rest.configuration.post_delete';
 
     /**
      * The CONFIGURATION_PRE_SAVE event occurs before the configuration gets saved.
      *
-     * @Event("CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\GetModifiedConfigurationEvent")
+     * @Event("Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\GetModifiedConfigurationEvent")
      */
     public const CONFIGURATION_PRE_SAVE = 'datahub.simple_rest.configuration.pre_save';
 
     /**
      * The CONFIGURATION_POST_SAVE event occurs after the configuration was saved.
      *
-     * @Event("CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent")
+     * @Event("Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent")
      */
     public const CONFIGURATION_POST_SAVE = 'datahub.simple_rest.configuration.post_save';
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,13 +13,13 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\EventListener;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\EventListener;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Exception\EndpointExceptionInterface;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\EndpointExceptionInterface;
 
 class ExceptionListener implements EventSubscriberInterface
 {

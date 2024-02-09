@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,20 +13,20 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\EventListener;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\EventListener;
 
 use RuntimeException;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\AssetMapping;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\DataObjectMapping;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\FolderMapping;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Exception\ESClientException;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\InitializeEndpointMessage;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use CIHub\Bundle\SimpleRESTAdapterBundle\SimpleRESTAdapterEvents;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\AssetMapping;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\DataObjectMapping;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Mapping\FolderMapping;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Exception\ESClientException;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\InitializeEndpointMessage;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\SimpleRESTAdapterEvents;
 
 class ConfigModificationListener implements EventSubscriberInterface
 {

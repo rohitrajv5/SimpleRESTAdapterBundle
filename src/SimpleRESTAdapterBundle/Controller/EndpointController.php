@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Controller;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Controller;
 
 use Elasticsearch\Common\Exceptions\Missing404Exception;
 use ONGR\ElasticsearchDSL\Query\FullText\MatchQuery;
@@ -23,10 +24,10 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexQueryService;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexQueryService;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Provider\AssetProvider;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 class EndpointController extends BaseEndpointController
 {
@@ -72,8 +73,10 @@ class EndpointController extends BaseEndpointController
             // but e.g. Adobe InDesign doesn't support WebP images.
             // Asset\Image\Thumbnail\Processor::setHasWebpSupport(false);
 
-            if (AssetProvider::CIHUB_PREVIEW_THUMBNAIL === $thumbnail && 'ciHub' === $reader->getType() &&
-                !Thumbnail\Config::getByName(AssetProvider::CIHUB_PREVIEW_THUMBNAIL) instanceof Thumbnail\Config) {
+            if (
+                AssetProvider::CIHUB_PREVIEW_THUMBNAIL === $thumbnail && 'ciHub' === $reader->getType() &&
+                !Thumbnail\Config::getByName(AssetProvider::CIHUB_PREVIEW_THUMBNAIL) instanceof Thumbnail\Config
+            ) {
                 if ($asset instanceof Asset\Image) {
                     $file = $asset->getThumbnail($defaultPreviewThumbnail)->getLocalFile();
                 } else {
@@ -83,7 +86,6 @@ class EndpointController extends BaseEndpointController
                 $file = $asset->getThumbnail($thumbnail)->getLocalFile();
             } else {
                 $file = $asset->getImageThumbnail($thumbnail)->getLocalFile();
-
             }
 
 

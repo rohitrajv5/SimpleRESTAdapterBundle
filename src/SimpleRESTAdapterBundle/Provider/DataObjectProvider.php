@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,15 +13,15 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Provider;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Provider;
 
 use Pimcore\Localization\LocaleService;
 use Pimcore\Model\DataObject;
 use Pimcore\Model\Element\ElementInterface;
 use Pimcore\Tool;
 use Webmozart\Assert\Assert;
-use CIHub\Bundle\SimpleRESTAdapterBundle\DataCollector\CompositeDataCollector;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector\CompositeDataCollector;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 final class DataObjectProvider implements ProviderInterface
 {

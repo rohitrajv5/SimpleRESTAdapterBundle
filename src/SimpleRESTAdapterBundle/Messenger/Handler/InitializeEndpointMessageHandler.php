@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\Handler;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\Handler;
 
 use Doctrine\DBAL\Driver\PDO\Statement;
 use Doctrine\DBAL\Exception as DBALException;
@@ -21,11 +22,11 @@ use Pimcore\Bundle\DataHubBundle\Configuration;
 use Pimcore\Db\ConnectionInterface;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\InitializeEndpointMessage;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\UpdateIndexElementMessage;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Utils\WorkspaceSorter;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\InitializeEndpointMessage;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\UpdateIndexElementMessage;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Utils\WorkspaceSorter;
 
 final class InitializeEndpointMessageHandler implements MessageHandlerInterface
 {

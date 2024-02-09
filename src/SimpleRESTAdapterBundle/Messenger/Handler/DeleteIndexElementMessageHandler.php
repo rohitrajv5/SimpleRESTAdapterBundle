@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,11 +13,11 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\Handler;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\Handler;
 
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\DeleteIndexElementMessage;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Elasticsearch\Index\IndexPersistenceService;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\DeleteIndexElementMessage;
 
 final class DeleteIndexElementMessageHandler implements MessageHandlerInterface
 {

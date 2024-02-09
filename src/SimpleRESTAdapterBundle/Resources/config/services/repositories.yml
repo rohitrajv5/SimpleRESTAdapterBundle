@@ -1,4 +1,4 @@
 services:
 
     # DataHub Configuration Repository
-    CIHub\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository: ~
+    Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository: ~

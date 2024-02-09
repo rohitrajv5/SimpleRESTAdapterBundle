@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Controller;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Controller;
 
 use Exception;
 use InvalidArgumentException;
@@ -27,13 +28,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Model\Event\GetModifiedConfigurationEvent;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
-use CIHub\Bundle\SimpleRESTAdapterBundle\SimpleRESTAdapterEvents;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Extractor\LabelExtractorInterface;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\ConfigurationEvent;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Model\Event\GetModifiedConfigurationEvent;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Repository\DataHubConfigurationRepository;
+use Rohit\Bundle\SimpleRESTAdapterBundle\SimpleRESTAdapterEvents;
 
 class ConfigController extends AdminController
 {
@@ -182,9 +183,9 @@ class ConfigController extends AdminController
             $savedModificationDate = $reader->getModificationDate();
 
             // ToDo Fix modifcationDate
-//            if ($modificationDate < $savedModificationDate) {
-//                throw new RuntimeException('The configuration was modified during editing, please reload the configuration and make your changes again.');
-//            }
+            //            if ($modificationDate < $savedModificationDate) {
+            //                throw new RuntimeException('The configuration was modified during editing, please reload the configuration and make your changes again.');
+            //            }
 
             $oldConfig = $reader->toArray();
             $newConfig = $newConfigReader->toArray();

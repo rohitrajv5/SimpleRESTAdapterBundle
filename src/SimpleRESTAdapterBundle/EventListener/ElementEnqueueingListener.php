@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,9 +13,9 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\EventListener;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\EventListener;
 
-use CIHub\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Manager\IndexManager;
 use Pimcore\Event\AssetEvents;
 use Pimcore\Event\DataObjectEvents;
 use Pimcore\Event\Model\AssetEvent;
@@ -24,11 +25,11 @@ use Pimcore\Model\DataObject;
 use Pimcore\Model\Element\ElementInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuardInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Loader\CompositeConfigurationLoader;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\DeleteIndexElementMessage;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Messenger\UpdateIndexElementMessage;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Guard\WorkspaceGuardInterface;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Loader\CompositeConfigurationLoader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\DeleteIndexElementMessage;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Messenger\UpdateIndexElementMessage;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 class ElementEnqueueingListener implements EventSubscriberInterface
 {

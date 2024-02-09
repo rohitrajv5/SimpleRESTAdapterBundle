@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,13 +13,13 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\DataCollector;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\DataCollector;
 
 use Exception;
 use Pimcore\Model\Asset;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
-use CIHub\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
+use Rohit\Bundle\SimpleRESTAdapterBundle\Reader\ConfigReader;
 
 final class ImageDataCollector implements DataCollectorInterface
 {
@@ -62,7 +63,7 @@ final class ImageDataCollector implements DataCollectorInterface
 
         // Explicitly disable WebP support, because Adobe's browser is Chromium based,
         // but e.g. Adobe InDesign doesn't support WebP images.
-//        Asset\Image\Thumbnail\Processor::setHasWebpSupport(false);
+        //        Asset\Image\Thumbnail\Processor::setHasWebpSupport(false);
 
         foreach ($thumbnails as $thumbnailName) {
             $thumbnail = $value->getThumbnail($thumbnailName);

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Simple REST Adapter.
  *
@@ -12,7 +13,7 @@
  * @license    https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle/blob/master/gpl-3.0.txt GNU General Public License version 3 (GPLv3)
  */
 
-namespace CIHub\Bundle\SimpleRESTAdapterBundle\Exception;
+namespace Rohit\Bundle\SimpleRESTAdapterBundle\Exception;
 
 use Symfony\Component\HttpFoundation\Response;
 
@@ -27,4 +28,3 @@ final class ConfigurationNotFoundException extends \RuntimeException implements 
         parent::__construct(sprintf('Invalid or unknown config name \'%s\'.', $configName), $code);
     }
 }
-

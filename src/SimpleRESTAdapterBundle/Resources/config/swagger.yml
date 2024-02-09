@@ -9,7 +9,7 @@ paths:
     /pimcore-datahub-webservices/simplerest/{config}/get-element:
         get:
             description: 'Method to get one single element by type and ID.'
-            operationId: 'CIHub\Bundle\SimpleRESTAdapterBundle\Controller\EndpointController::getElementAction'
+            operationId: 'Rohit\Bundle\SimpleRESTAdapterBundle\Controller\EndpointController::getElementAction'
             parameters:
                 -   name: 'Authorization'
                     in: 'header'
@@ -57,7 +57,7 @@ paths:
     /pimcore-datahub-webservices/simplerest/{config}/search:
         get:
             description: 'Method to search for elements, returns elements of all types. For paging use link provided in link header of response.'
-            operationId: 'CIHub\Bundle\SimpleRESTAdapterBundle\Controller\EndpointController::searchAction'
+            operationId: 'Rohit\Bundle\SimpleRESTAdapterBundle\Controller\EndpointController::searchAction'
             parameters:
                 -   name: 'Authorization'
                     in: 'header'
@@ -144,7 +144,7 @@ paths:
     /pimcore-datahub-webservices/simplerest/{config}/tree-items:
         get:
             description: 'Method to load all elements of a tree level. For paging use link provided in link header of response.'
-            operationId: 'CIHub\Bundle\SimpleRESTAdapterBundle\Controller\EndpointController::treeItemsAction'
+            operationId: 'Rohit\Bundle\SimpleRESTAdapterBundle\Controller\EndpointController::treeItemsAction'
             parameters:
                 -   name: 'Authorization'
                     in: 'header'

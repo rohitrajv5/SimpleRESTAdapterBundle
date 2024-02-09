@@ -1,5 +1,5 @@
 {
-  "name": "ci-hub/simple-rest-adapter-bundle",
+  "name": "rohitrajv5/simple-rest-adapter-bundle",
   "type": "pimcore-bundle",
   "license": "GPL-3.0-or-later",
   "description": "Simple REST Adapter for Pimcore DataHub",
@@ -7,11 +7,11 @@
     "pimcore",
     "pimcore-bundle"
   ],
-  "homepage": "https://github.com/ci-hub-gmbh/SimpleRESTAdapterBundle",
+  "homepage": "https://github-gmbh/SimpleRESTAdapterBundle",
   "authors": [
     {
       "name": "CI HUB GmbH",
-      "email": "info@ci-hub.com",
+      "email": "rohitrajv5@gmail.com",
       "homepage": "https://ci-hub.com"
     }
   ],
@@ -19,7 +19,7 @@
     "php": ">=8.0",
     "ongr/elasticsearch-dsl": "^7.0",
     "pimcore/data-hub": "^1.0",
-    "pimcore/pimcore": "^10.0",
+    "pimcore/pimcore": "^11.0",
     "symfony/messenger": "^5.0",
     "zircote/swagger-php": "^3.0"
   },
@@ -33,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CIHub\\Bundle\\SimpleRESTAdapterBundle\\": "src/SimpleRESTAdapterBundle/"
+      "Rohit\\Bundle\\SimpleRESTAdapterBundle\\": "src/SimpleRESTAdapterBundle/"
     }
   },
   "extra": {
@@ -42,7 +42,7 @@
     },
     "pimcore": {
       "bundles": [
-        "CIHub\\Bundle\\SimpleRESTAdapterBundle\\SimpleRESTAdapterBundle"
+        "Rohit\\Bundle\\SimpleRESTAdapterBundle\\SimpleRESTAdapterBundle"
       ]
     }
   }
